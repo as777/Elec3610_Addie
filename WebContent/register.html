@@ -14,80 +14,158 @@
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
-		<title>User Registration</title>
+		<title>Register</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row main">
-				<div class="main-login main-center">
-				<h5>Register</h5>
-					<form class="" method="post" action="register", id="registerform">
-						
-						<div class="form-group">
-							<label for="name" class="cols-sm-2 control-label">Your Name</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-								</div>
+		<div class="main-center">
+			<form class="form-horizontal" method="post" action="#" id="registerform">
+			    <fieldset>
+			
+			        <legend>Register</legend>
+			        <div class="row">
+			        <!-- Interest domain -->
+			        <div class="col-md-6 form-group">
+			          <label class=" control-label">Please select at least three interests:</label>
+			          <div class="">
+					        <div class="checkbox">
+							  <label><input type="checkbox" value="fashion">&#32;fashion</label>
 							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Your Email</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-								</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="electronics">&#32;electronics</label>
 							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">Username</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-								</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="groceries">&#32;groceries</label>
 							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="passwordinput" class="cols-sm-2 control-label">Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-								</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="travel">&#32;travel</label>
 							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="passworkinput" class="cols-sm-2 control-label">Confirm Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="passwordcfm" id="passwordcfm"  placeholder="Confirm your Password"/>
-								</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="computing">&#32;computing</label>
 							</div>
-						</div>
-
-						<div class="form-group ">
-							<a href="https://elearning.sydney.edu.au/webapps/login/?action=relogin" 
-							target="_blank" type="button" id="submitbutton" name="submitbutton" 
-							class="btn btn-primary btn-lg btn-block login-button">Register</a>
-						</div>
-						
-					</form>
-				</div>
-			</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="home">&#32;home</label>
+							</div>
+					  </div>
+					</div>
+					
+					<!-- Personal information -->
+					<div class="col-md-6">
+				        <!-- Text input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="firstname">First Name</label>  
+				          <div class="">
+				          <input id="name" name="name" type="text" placeholder="Your first name" class="form-control input-md" required>
+				          </div>
+				        </div>
+				        
+				        <!-- Text input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="lastname">Last Name</label>  
+				          <div class="">
+				          <input id="lastname" name="lastname" type="text" placeholder="Your last name" class="form-control input-md" required> 
+				          </div>
+				        </div>
+				
+				        <!-- Text input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="email">Email</label>  
+				          <div class="">
+				          <input id="email" name="email" type="text" placeholder="Email address" class="form-control input-md" required>
+				          <span class="help-block">Email will be used for login</span>  
+				          </div>
+				        </div>
+				
+				        <!-- Password input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="password">Password</label>
+				          <div class="">
+				            <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required>
+				            <span class="help-block">Password must be at least 8 characters</span>
+				          </div>
+				        </div>
+				
+				        <!-- Password input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="rpassword">Confirm Password</label>
+				          <div class="">
+				            <input id="rpassword" name="rpassword" type="password" placeholder="Confirm password" class="form-control input-md" required>
+				            <span class="help-block">Retype password</span>
+				          </div>
+				        </div>
+				
+				        <!-- Text input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="age">Age Range</label>
+				          <div class="">
+				            <select id="age" name="age" class="form-control">
+						        <option value="">Choose Age Range:</option>
+						        <option value="<18">&#60;18</option>
+						        <option value="18-24">18-24</option>
+						        <option value="25-34">25-34</option>
+						        <option value="35-44">35-44</option>
+						        <option value="45-54">45-54</option>
+						        <option value="55-64">55-64</option>
+						        <option value="65+">65+</option>
+				            </select>
+				          </div>
+				        </div>
+				
+						<!-- Text input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="gender">Gender</label>
+				          <div class="">
+				            <label class="radio-inline">
+								<input type="radio" name="gender"> female <br />
+							</label>
+							<label class="radio-inline">
+							    <input type="radio" name="gender"> male
+							</label>
+				          </div>
+				        </div>
+				
+						<!-- Text input-->
+				        <div class="form-group">
+				          <label class=" control-label" for="area">Area</label>
+				          <div class="">
+				            <select id="state" name="state" class="form-control">
+				            	<option value="">Choose State:</option>
+								<option value="nsw">New South Wales</option>
+								<option value="vic">Victoria</option>
+								<option value="qld">Queensland</option>
+								<option value="wa">Western Australia</option>
+								<option value="sa">South Australia</option>
+								<option value="tas">Tasmania</option>
+								<option value="act">Australian Capital Territory</option>
+								<option value="nt">Northern Territory</option>
+							</select>
+				          </div>
+					        <div class="">
+					            <select id="suburb" name="suburb" class="form-control">
+							        <option value="">Choose Suburb:</option>
+					            </select>
+					        </div>
+				        </div>
+			        </div>
+			        </div>
+			
+			        <!-- Button (Double) -->
+			        <div style="clear:both"></div>
+			        <div class="form-group">
+			          <label class=" control-label" for="save"></label>
+			          <div class="col-md-8">
+			            <button id="submit" name="submit" class="btn login-button">Submit</button>
+			            <button id="cancel" name="cancel" class="btn login-button">Cancel</button>
+			          </div>
+			        </div>
+			
+		        </fieldset>
+			</form>
 		</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/register.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
 	</body>
 </html>

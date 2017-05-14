@@ -33,6 +33,12 @@ hr{
 	color: #fff;
 }
 
+select{
+	margin-bottom: 15px;
+	font-family: 'Oxygen', sans-serif;
+  	font-size: 8px;
+}
+
 .form-group{
 	margin-bottom: 15px;
 }
@@ -41,8 +47,14 @@ label{
 	margin-bottom: 15px;
 }
 
+.radio-inline, .checkbox {
+	color: #464a4c;
+}
+
 input,
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+span.help-block {
+	color: #464a4c;
     font-size: 11px;
     padding-top: 3px;
 }
@@ -60,7 +72,7 @@ input::-webkit-input-placeholder {
 }
 .form-control {
     height: auto!important;
-padding: 8px 12px !important;
+	padding: 8px 12px !important;
 }
 .input-group {
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
@@ -89,25 +101,43 @@ padding: 8px 12px !important;
     background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
 }
+
 .main-center{
- 	margin-top: 30px;
+/*  	margin-top: 30px;
  	margin: 0 auto;
  	max-width: 400px;
-    padding: 10px 40px;
-	/* background:#009edf; */
-	    color: #009edf;
+    padding: 10px 40px; */
+	color: #70ad46;
     text-shadow: none;
 	/* -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31); */
 	/* box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31); */
 
 }
+
+.wrap {
+	color: #70ad46;
+	width: 100%;
+}
+
+.floatleft, .floatright {
+    float:left;
+    width: 50%;
+}
+
+.floatright {
+    width: 50%;
+}
+
 span.input-group-addon i {
-    color: #009edf;
+    color: #70ad46;
     font-size: 17px;
 }
 
 .login-button{
+	background: #70ad46;
+	font-family: 'Oxygen', sans-serif;
+	color: #fff;
 	margin-top: 5px;
 }
 

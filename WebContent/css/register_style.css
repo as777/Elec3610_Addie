@@ -43,6 +43,10 @@ select{
 	margin-bottom: 15px;
 }
 
+.button-group {
+	text-align: center;
+}
+
 label{
 	margin-bottom: 15px;
 }
@@ -143,6 +147,36 @@ span.input-group-addon i {
 
 .login-register{
 	font-size: 11px;
+	text-align: center;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+.block-left {
+	/* margin: 20px; */
+	padding-left: 10%;
+    display: table-cell;
+    /* text-align: center; */
+    vertical-align: middle
+}
+
+.block-right {
+	/* margin: 20px; */
+	padding-top:30px;
+	padding-right: 10%;
+    display: table-cell;
+    /* text-align: center; */
+    vertical-align: middle
+}
+
+legend {
+	padding-top:30px;
 	text-align: center;
 }
 

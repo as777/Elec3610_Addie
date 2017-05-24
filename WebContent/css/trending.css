@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1000px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 250px;
+  height: 250px;
+  float: left;
+  background: #d2d2d2;
+  border: 1px solid #333;
+}
+
+.grid-item--width2 { width: 500px; }
+
+.grid-item--height2 { height: 500px; }
+

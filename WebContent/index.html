@@ -22,9 +22,15 @@
 	<div class="masthead">
 		<div class="container">
 			<nav class="nav-left nav">
-				<a class="nav-item active" href="index.html">Home</a> <a
-					class="nav-item" href="trending.html">Trending</a> <a
-					class="nav-item" href="#">Popular</a>
+				<a class="nav-item active" href="index.html">Home</a>
+				<a class="nav-item" href="trending.html">Trending</a>
+				<a class="nav-item" href="#">Popular</a>
+				<div class="input-group" id="search-input">
+			      <input type="text" class="form-control" placeholder="Search for post">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">Search</button>
+			      </span>
+			    </div><!-- /input-group -->
 			</nav>
 			<nav class="nav-right">
 				<a class="nav-item" href="register.html">Register</a> <a
@@ -32,6 +38,7 @@
 			</nav>
 		</div>
 	</div>
+	
 
 	<div class="container">
 
@@ -42,104 +49,66 @@
 					<h1>Addie</h1>
 					<p>Here is your ads feed based on what you like...</p>
 				</div>
+				
+				
 
 				<div style="width:1000px;">
 					<div class="grid"
 						data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 250 }'>
-						<div class="grid-item grid-item--width2"></div>
-						<div class="grid-item grid-item--width2 grid-item--height2"></div>
-						<div class="grid-item grid-item--height2"></div>
-						<div class="grid-item"></div>
-						<div class="grid-item grid-item--width2 grid-item--height2"></div>
-						<div class="grid-item grid-item--height2"></div>
-						<div class="grid-item"></div>
+						<div class="grid-row">
+							<div class="grid-item grid-item--width2 grid-item--height2">
+								<div class="hovereffect">
+									<div class="cover">
+										<img src="img/6300c8965843d9fceba4b126b3b876f1.jpg">
+									</div>
+									<div class="overlay">
+										<h2>Nokia 888 Mobile Phone</h2>
+										<a class="info" href="https://www.nokia.com/en_au/phones/nokia-6">link</a>
+										<p>
+											New Nokia 888 uses liquid battery, speech recognition, flexible touch screen, 
+											touch sensitive body cover which lets it understand and adjust to the environment.
+											<br>An outstanding phone with latest Android and immersive entertainment.
+											<br>* 5.5" bright full-HD display
+											<br>* Immersive sound with Dolby Atmos
+											<br>* 16 MP camera
+										</p>
+										<div class="row-tag">
+											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">electronics</a>
+											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">technology</a>
+											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">phone</a>
+											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">online</a>
+											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">nokia</a>
+										</div>
+										<div class="row-vote">
+											<button class="btn btn-default" type="button">upvote</button>							
+											<button class="btn btn-default" type="button">downvote</button>	
+										</div>						
+										<div class="content"></div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item grid-item--height2">
+								<img>
+							</div>
+							<div class="grid-item grid-item--height2"></div>
+						</div>
 						
-						<div class="grid-item grid-item--width2"></div>
-						<div class="grid-item grid-item--width2 grid-item--height2"></div>
-						<div class="grid-item grid-item--height2"></div>
-						<div class="grid-item"></div>
-						<div class="grid-item grid-item--width2 grid-item--height2"></div>
-						<div class="grid-item grid-item--height2"></div>
-						<div class="grid-item"></div>
+						<div class="grid-row">
+							<div class="grid-item grid-item--height2"></div>
+							<div class="grid-item grid-item--height2"></div>
+							<div class="grid-item grid-item--height2"></div>
+							<div class="grid-item grid-item--height2"></div>
+						</div>
+						
+						<div class="grid-row">
+							<div class="grid-item grid-item--height2"></div>
+							<div class="grid-item grid-item--height2"></div>
+							<div class="grid-item grid-item--width2 grid-item--height2"></div>
+						</div>
+						
 					</div>
 					<!--/grid-->
 				</div>
-
-				<!-- <div class="row">
-					<div class="col-xs-6 col-lg-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-							malesuada magna mollis euismod. Donec sed odio dui.</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details &raquo;</a>
-						</p>
-					</div>
-					/.col-xs-6.col-lg-4
-					<div class="col-xs-6 col-lg-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-							malesuada magna mollis euismod. Donec sed odio dui.</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details &raquo;</a>
-						</p>
-					</div>
-					/.col-xs-6.col-lg-4
-					<div class="col-xs-6 col-lg-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-							malesuada magna mollis euismod. Donec sed odio dui.</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details &raquo;</a>
-						</p>
-					</div>
-					/.col-xs-6.col-lg-4
-					<div class="col-xs-6 col-lg-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-							malesuada magna mollis euismod. Donec sed odio dui.</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details &raquo;</a>
-						</p>
-					</div>
-					/.col-xs-6.col-lg-4
-					<div class="col-xs-6 col-lg-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-							malesuada magna mollis euismod. Donec sed odio dui.</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details &raquo;</a>
-						</p>
-					</div>
-					/.col-xs-6.col-lg-4
-					<div class="col-xs-6 col-lg-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce
-							dapibus, tellus ac cursus commodo, tortor mauris condimentum
-							nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-							malesuada magna mollis euismod. Donec sed odio dui.</p>
-						<p>
-							<a class="btn btn-default" href="#" role="button">View
-								details &raquo;</a>
-						</p>
-					</div>
-					/.col-xs-6.col-lg-4
-				</div>
-				/row -->
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
 		</div>

@@ -9,12 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-  	<servlet-name>Register</servlet-name>
-  	<servlet-class>elec3610.servlet.RegisterServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>Register</servlet-name>
-  	<url-pattern>/register</url-pattern>
-  </servlet-mapping>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>elec3610.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
 </web-app>

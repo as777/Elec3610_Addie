@@ -33,58 +33,60 @@
 			</nav>
 			<nav class="nav-right">
 				<a class="nav-item active" href="register.html">Register</a> <a
-					class="nav-item" href="#">Sign In</a>
+					class="nav-item" href="login.html">Sign In</a>
 			</nav>
 		</div>
 	</div>
 	    
 		<div class="container">
-			<form class="form-horizontal" method="post" action="#" id="registerform">
+			<form class="form-horizontal" method="post" action="register"
+					id="registerform" onSubmit="return validateForm(event);">
 			    <fieldset>
 			
 			        <div class="row">
 			       
 				        <!-- Interest domain -->
 				        <div class="block-left">
-				          <label class=" control-label">Please select at least three interests:</label>
+				          <label class=" control-label">Please select at least three interests: <span class="star">(*)</span></label>
 				          <div class="form-group">
 				          		<div class="checkbox">
-								  <label><input type="checkbox" value="food">&#32;food</label>
+								  <label><input type="checkbox" name ="interests" value="food">&#32;food</label>
 								</div>
 						        <div class="checkbox">
-								  <label><input type="checkbox" value="fashion">&#32;fashion</label>
+								  <label><input type="checkbox" name ="interests" value="fashion">&#32;fashion</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" value="electronics">&#32;electronics</label>
+								  <label><input type="checkbox" name ="interests" value="electronics">&#32;electronics</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" value="groceries">&#32;groceries</label>
+								  <label><input type="checkbox" name ="interests" value="groceries">&#32;groceries</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" value="travel">&#32;travel</label>
+								  <label><input type="checkbox" name ="interests" value="travel">&#32;travel</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" value="computing">&#32;computing</label>
+								  <label><input type="checkbox" name ="interests" value="computing">&#32;computing</label>
 								</div>
 								<div class="checkbox">
-								  <label><input type="checkbox" value="home">&#32;home</label>
+								  <label><input type="checkbox" name ="interests" value="home">&#32;home</label>
 								</div>
 						  </div>
+						  <div id="warningInterests">Please select at least 3.</div>
 						</div>
 						
 						<!-- Personal information -->
 						<div class="block-right">
 					        <!-- Text input-->
 					        <div class="form-group">
-					          <label class=" control-label" for="firstname">First Name</label>  
+					          <label class=" control-label" for="firstname">First Name <span class="star">(*)</span></label>  
 					          <div class="">
-					          <input id="name" name="name" type="text" placeholder="Your first name" class="form-control input-md" required>
+					          <input id="firstname" name="firstname" type="text" placeholder="Your first name" class="form-control input-md" required>
 					          </div>
 					        </div>
 					        
 					        <!-- Text input-->
 					        <div class="form-group">
-					          <label class=" control-label" for="lastname">Last Name</label>  
+					          <label class=" control-label" for="lastname">Last Name <span class="star">(*)</span></label>  
 					          <div class="">
 					          <input id="lastname" name="lastname" type="text" placeholder="Your last name" class="form-control input-md" required> 
 					          </div>
@@ -92,7 +94,7 @@
 					
 					        <!-- Text input-->
 					        <div class="form-group">
-					          <label class=" control-label" for="email">Email</label>  
+					          <label class=" control-label" for="email">Email <span class="star">(*)</span></label>  
 					          <div class="">
 					          <input id="email" name="email" type="text" placeholder="Email address" class="form-control input-md" required>
 					          <span class="help-block">Email will be used for login</span>  
@@ -101,7 +103,7 @@
 					
 					        <!-- Password input-->
 					        <div class="form-group">
-					          <label class=" control-label" for="password">Password</label>
+					          <label class=" control-label" for="password">Password <span class="star">(*)</span></label>
 					          <div class="">
 					            <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required>
 					            <span class="help-block">Password must be at least 8 characters</span>
@@ -110,7 +112,7 @@
 					
 					        <!-- Password input-->
 					        <div class="form-group">
-					          <label class=" control-label" for="rpassword">Confirm Password</label>
+					          <label class=" control-label" for="rpassword">Confirm Password <span class="star">(*)</span></label>
 					          <div class="">
 					            <input id="rpassword" name="rpassword" type="password" placeholder="Confirm password" class="form-control input-md" required>
 					            <span class="help-block">Retype password</span>
@@ -139,10 +141,10 @@
 					          <label class=" control-label" for="gender">Gender</label>
 					          <div class="">
 					            <label class="radio-inline">
-									<input type="radio" name="gender"> female <br />
+									<input type="radio" name="gender" value="female">female
 								</label>
 								<label class="radio-inline">
-								    <input type="radio" name="gender"> male
+								    <input type="radio" name="gender" value="male">male
 								</label>
 					          </div>
 					        </div>
@@ -166,6 +168,14 @@
 						        <div class="">
 						            <select id="suburb" name="suburb" class="form-control">
 								        <option value="">Choose Suburb:</option>
+										<option value="sydney">Sydney</option>
+										<option value="glebe">Glebe</option>
+										<option value="ultimo">Ultimo</option>
+										<option value="pyrmont">Pyrmont</option>
+										<option value="chippendale">Chippendale</option>
+										<option value="newtown">Newtown</option>
+										<option value="erskineville">Erskineville</option>
+										<option value="balmain">Balmain</option>
 						            </select>
 						        </div>
 					        </div>
@@ -174,7 +184,7 @@
 			
 			        <!-- Button (Double) -->
 			        <div style="clear:both"></div>
-			        <div class="jumbotron button-group">
+			        <div class="button-group">
 			          <label class=" control-label" for="save"></label>
 			          <div class="">
 			            <button id="submit" name="submit" class="btn login-button">Submit</button>

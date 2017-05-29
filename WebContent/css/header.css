@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: "Oxygen", sans-serif, Helvetica, Arial;
+  font-family: 'Oxygen', sans-serif;
   color: #555;
 }
 
@@ -13,7 +13,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Oxygen", sans-serif, Helvetica, Arial;
+  font-family: 'Oxygen', sans-serif;
   font-weight: normal;
   color: #70ad46;
   /* 98b880 */
@@ -95,10 +95,23 @@ h6, .h6 {
 button.btn.btn-default {
 	background: #70ad46;
 	color: #fff;
+	font-family: 'Oxygen', sans-serif;
 }
 
 #search-input {
 	margin-left: 60px;
 	border: 4px solid #70ad46;
 	border-radius: 0px 0px 0px 0px;
+}
+
+input,
+input::-webkit-input-placeholder,
+span.help-block {
+	color: #464a4c;
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.form-control {
+    border-radius: 0px;
 }

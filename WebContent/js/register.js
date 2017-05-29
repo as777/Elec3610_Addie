@@ -22,18 +22,29 @@ $(document).ready(function(){
 			pwdCfm = false;
 		}
 	});
-	
-	$("#submit").bind("click", function() {
-		
-		var msg = "";
-		
-		if (pwdLength && pwdCfm) {
-			$("#registerform").submit();
-		} else if (!pwdLength) {
-			alert("The password must be at least 8 characters.");
-		} else if (!pwdCfm) {
-			alert("The password confirmation does not match.");			
-		}
-		
-	});
 });
+
+function validateForm(event)
+{
+//    event.preventDefault();
+    if ($("[name=interests]:checked").length < 3) 
+    {
+		var warning = document.getElementById('warningInterests');
+		warning.style.display = 'block';
+		return false;
+	}
+    else if (!pwdLength)
+    {
+		alert("The password must be at least 8 characters.");
+		return false;
+	}
+    else if (!pwdCfm)
+    {
+		alert("The password confirmation does not match.");	
+		return false;
+	}
+    else {
+		warning.style.display = 'none';
+		$("#registerform").submit();
+    }
+}

@@ -25,6 +25,7 @@ select{
 
 .button-group {
 	text-align: center;
+	margin-bottom: 15px;
 }
 
 label{
@@ -33,14 +34,6 @@ label{
 
 .radio-inline, .checkbox {
 	color: #464a4c;
-}
-
-input,
-input::-webkit-input-placeholder,
-span.help-block {
-	color: #464a4c;
-    font-size: 11px;
-    padding-top: 3px;
 }
 
 .main-login{
@@ -58,11 +51,11 @@ span.help-block {
     height: auto!important;
 	padding: 8px 12px !important;
 }
-.input-group {
+/* .input-group {
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
-}
+} */
 #button {
     border: 1px solid #ccc;
     margin-top: 28px;
@@ -100,7 +93,7 @@ span.help-block {
     width: 50%;
 }
 
-span.input-group-addon i {
+span.input-group-btn {
     color: #70ad46;
     font-size: 17px;
 }
@@ -145,5 +138,14 @@ span.input-group-addon i {
 legend {
 	padding-top:30px;
 	text-align: center;
+}
+
+span.star {
+	color: DarkRed;
+}
+
+#warningInterests {
+	display: none;
+	color: DarkRed;
 }
 

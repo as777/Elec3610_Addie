@@ -123,7 +123,7 @@ span.input-group-btn {
 	padding-left: 10%;
     display: table-cell;
     /* text-align: center; */
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .block-right {

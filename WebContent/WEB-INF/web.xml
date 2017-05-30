@@ -17,4 +17,14 @@
 		<servlet-name>Register</servlet-name>
 		<url-pattern>/register</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>elec3610.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>  
 </web-app>

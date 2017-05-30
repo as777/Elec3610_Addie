@@ -38,7 +38,34 @@
 		</div>
 	</div>
 	    
-	<div class="container">
+	<div class="container" style="padding:4rem 2rem;width:30%;">
+		<form class="form-horizontal" method="post" action="login"
+				id="loginform" onSubmit="return validateForm(event);">
+		    <fieldset>
+		
+		        <div class="row">
+					<!-- Text input-->
+			        <div class="form-group">
+			          <label class=" control-label" for="email">Email</label>  
+			          <div class="">
+			          <input id="email" name="email" type="text" placeholder="Your email address" class="form-control input-md" required>
+			          </div>
+			        </div>
+			        
+			        <!-- Password input-->
+			        <div class="form-group">
+			          <label class=" control-label" for="password">Password</label>
+			          <div class="">
+			            <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required>
+			          </div>
+			        </div>
+			        
+			        <div class="button-group">
+			        	<button id="submit" name="submit" class="btn login-button">Sign In</button>
+			        </div>
+				</div>
+			</fieldset>
+		</form>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

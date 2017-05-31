@@ -13,19 +13,7 @@
 </head>
 <body>
 
-    <div class="masthead">
-      <div class="container">
-        <nav class="nav-left nav">
-          <a class="nav-item" href="index.html">Home</a>
-          <a class="nav-item active" href="trending.html">Trending</a>
-          <a class="nav-item" href="#">Popular</a>
-        </nav>
-        <nav class="nav-right">
-          <a class="nav-item" href="register.html">Register</a>
-          <a class="nav-item" href="login.html">Sign In</a>
-        </nav>
-      </div>
-    </div>
+	<%@include file="header.jsp" %>
     
 <h1>Masonry - Initialize in HTML</h1>
 

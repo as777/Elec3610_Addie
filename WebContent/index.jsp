@@ -21,25 +21,27 @@
 	</head>
 
 <body>
-	<div class="masthead">
+	<%@include file="header.jsp" %>
+<!-- 	<div class="masthead">
 		<div class="container">
 			<nav class="nav-left nav">
-				<a class="nav-item active" href="index.html">Home</a>
-				<a class="nav-item" href="trending.html">Trending</a>
+				<a class="nav-item active" href="index.jsp">Home</a>
+				<a class="nav-item" href="trending.jsp">Trending</a>
 				<a class="nav-item" href="#">Popular</a>
 				<div class="input-group" id="search-input">
 			      <input type="text" class="form-control" placeholder="Search for post">
 			      <span class="input-group-btn">
 			        <button class="btn btn-default" type="button">Search</button>
 			      </span>
-			    </div><!-- /input-group -->
+			    </div>/input-group
 			</nav>
 			<nav class="nav-right">
-				<a class="nav-item" href="register.html">Register</a>
-				<a class="nav-item" href="login.html">Sign In</a>
+				<a class="nav-item" href="register.jsp">Register</a>
+				<a class="nav-item" href="login.jsp">Sign In</a>
+				<a class="nav-item" href="logout">Sign Out</a>
 			</nav>
 		</div>
-	</div>
+	</div> -->
 	
 
 	<div class="container">
@@ -49,7 +51,12 @@
 			<div>
 				<div class="jumbotron">
 					<h1>Addie</h1>
-					<p>Here is your ads feed based on what you like...</p>
+		<%
+			String firstname = (String)session.getAttribute("firstname");
+			if (firstname != null) {
+				out.print(firstname + ", here is your ads feed based on what you like...");
+			}
+		%>
 				</div>
 				
 				<div style="width:1000px;">

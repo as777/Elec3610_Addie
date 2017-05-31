@@ -18,25 +18,7 @@
 		<title>Register - Addie</title>
 	</head>
 	<body>
-	    	<div class="masthead">
-		<div class="container">
-			<nav class="nav-left nav">
-				<a class="nav-item" href="index.html">Home</a>
-				<a class="nav-item" href="trending.html">Trending</a>
-				<a class="nav-item" href="#">Popular</a>
-				<div class="input-group" id="search-input">
-			      <input type="text" class="form-control" placeholder="Search for post">
-			      <span class="input-group-btn">
-			        <button class="btn btn-default" type="button">Search</button>
-			      </span>
-			    </div><!-- /input-group -->
-			</nav>
-			<nav class="nav-right">
-				<a class="nav-item active" href="register.html">Register</a> <a
-					class="nav-item" href="login.html">Sign In</a>
-			</nav>
-		</div>
-	</div>
+		<%@include file="header.jsp" %>
 	    
 		<div class="container">
 			<form class="form-horizontal" method="post" action="register"

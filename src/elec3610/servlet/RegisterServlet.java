@@ -1,5 +1,6 @@
 package elec3610.servlet;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
 import java.util.Properties;
@@ -9,8 +10,14 @@ import javax.servlet.http.*;
 
 
 public class RegisterServlet extends HttpServlet {
+	
+	public void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");  
+	    request.getRequestDispatcher("register.jsp").include(request, response);
+	}
 
-	protected void doGet(HttpServletRequest request,
+	public void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException {
 		
 		String[] interests = request.getParameterValues("interests");
@@ -95,18 +102,14 @@ public class RegisterServlet extends HttpServlet {
 //		    response.setStatus(response.SC_MOVED_TEMPORARILY);
 //		    response.setHeader("Location", "login.html");
 //		    
-		    response.sendRedirect("login.html");
+			PrintWriter out = response.getWriter();
+//			out.print("Thank you for sign up, please log in");
+//		    response.sendRedirect("login.jsp");
+			request.getRequestDispatcher("login.jsp").include(request, response);
+		    out.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
-		
+		}		
 	}
-
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException {
-		doGet(request, response);
-	}
-
 }

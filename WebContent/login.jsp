@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
     <head> 
@@ -25,6 +26,11 @@
 				id="loginform" onSubmit="return validateForm(event);">
 		    <fieldset>
 		
+				<c:if test="${not empty message}">
+				<div class="warning">
+			    	<p>${message}</p>
+		    	</div>
+				</c:if>
 		        <div class="row">
 					<!-- Text input-->
 			        <div class="form-group">

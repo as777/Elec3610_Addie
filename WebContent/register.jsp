@@ -123,10 +123,10 @@
 					          <label class=" control-label" for="gender">Gender</label>
 					          <div class="">
 					            <label class="radio-inline">
-									<input type="radio" name="gender" value="female">female
+									<input type="radio" name="gender" value="female">Female
 								</label>
 								<label class="radio-inline">
-								    <input type="radio" name="gender" value="male">male
+								    <input type="radio" name="gender" value="male">Male
 								</label>
 					          </div>
 					        </div>
@@ -137,10 +137,10 @@
 					          <div class="">
 					            <select id="state" name="state" class="form-control">
 					            	<option value="">Choose State:</option>
-									<option value="nsw">New South Wales</option>
-									<option value="vic">Victoria</option>
-									<option value="qld">Queensland</option>
-									<option value="wa">Western Australia</option>
+									<option value="New South Wales">New South Wales</option>
+									<option value="Victoria">Victoria</option>
+									<option value="Queensland">Queensland</option>
+									<option value="Western Australia">Western Australia</option>
 									<option value="sa">South Australia</option>
 									<option value="tas">Tasmania</option>
 									<option value="act">Australian Capital Territory</option>
@@ -150,7 +150,7 @@
 						        <div class="">
 						            <select id="suburb" name="suburb" class="form-control">
 								        <option value="">Choose Suburb:</option>
-										<option value="sydney">Sydney</option>
+										<option value="Sydney">Sydney</option>
 										<option value="glebe">Glebe</option>
 										<option value="ultimo">Ultimo</option>
 										<option value="pyrmont">Pyrmont</option>

@@ -31,7 +31,8 @@ public class LoginServlet extends HttpServlet {
 	        request.getRequestDispatcher("index.jsp").include(request, response);
 	    }  
 	    else{
-//	    	out.print("Please check the username or password is correct.");  
+//	    	out.print("Please check the username or password is correct."); 
+	    	request.setAttribute("message", "Invalid email or password.");
             request.getRequestDispatcher("login.jsp").include(request, response);
 	    }  
 	          
@@ -61,9 +62,14 @@ public class LoginServlet extends HttpServlet {
 			
 			// Session attributes
 			if (status) {
-				HttpSession session=request.getSession();  
+				HttpSession session=request.getSession(); 
 		        session.setAttribute("email", email);
-		        session.setAttribute("firstname", rs.getString("firstname"));  
+		        session.setAttribute("firstname", rs.getString("firstname"));
+		        session.setAttribute("lastname", rs.getString("lastname"));
+		        session.setAttribute("age", rs.getString("age"));
+		        session.setAttribute("gender", rs.getString("gender"));
+		        session.setAttribute("state", rs.getString("state"));
+		        session.setAttribute("suburb", rs.getString("suburb"));
 			}
 			
 		} catch (Exception e) {

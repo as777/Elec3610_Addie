@@ -9,7 +9,7 @@
       <a class="nav-item" href="#">Popular</a>
       
 	  <div class="input-group" id="search-input">
-		  <input type="text" class="form-control" placeholder="Search for post">
+		  <input type="text" class="form-control" placeholder="Search for post, tag...">
 		  <span class="input-group-btn">
 			  <button class="btn btn-default" type="button">Search</button>
 		  </span>

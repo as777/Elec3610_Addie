@@ -11,6 +11,7 @@
 		<!-- Website Font style -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/register_style.css">
 		<!-- Google Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
@@ -55,6 +56,7 @@
 			</fieldset>
 		</form>
 	</div>
+	<%@include file="footer.jsp" %>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

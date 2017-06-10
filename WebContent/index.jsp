@@ -12,6 +12,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom styles for this template -->
 		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/index.css">
 		<!-- Google Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
@@ -89,7 +90,7 @@
 										<div class="row-vote">
 											<div>
 											<span class="btn btn-default upvote" onclick="up(this)"><span>238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down(this)"><span>4</span> downvote</span>	
+											<span class="btn btn-default" onclick="down(this)"><span>0</span> downvote</span>	
 											</div>						
 										<div class="content"></div>
 									</div>
@@ -119,7 +120,7 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default upvote" onclick="up(this)"><span>238</span> upvote</span>							
+											<span class="btn btn-default upvote" onclick="up(this)"><span>424</span> upvote</span>							
 											<span class="btn btn-default" onclick="down(this)"><span>4</span> downvote</span>	
 											</div>					
 										<div class="content"></div>
@@ -147,8 +148,8 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											<span class="btn btn-default upvote" onclick="up(this)"><span>78</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>0</span> downvote</span>	
 											</div>							
 										<div class="content"></div>
 									</div>
@@ -178,8 +179,8 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											<span class="btn btn-default upvote" onclick="up(this)"><span>52</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>9</span> downvote</span>	
 											</div>						
 										<div class="content"></div>
 										</div>
@@ -207,8 +208,8 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											<span class="btn btn-default upvote" onclick="up(this)"><span>31</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>4</span> downvote</span>	
 											</div>							
 										<div class="content"></div>
 										</div>
@@ -233,9 +234,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
-											</div>						
+											<span class="btn btn-default upvote" onclick="up(this)"><span>29</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>1</span> downvote</span>	
+											</div>					
 										<div class="content"></div>
 										</div>
 									</div>
@@ -265,9 +266,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
-											</div>						
+											<span class="btn btn-default upvote" onclick="up(this)"><span>3</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>45</span> downvote</span>	
+											</div>					
 										<div class="content"></div>
 										</div>
 									</div>
@@ -298,9 +299,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
-											</div>						
+											<span class="btn btn-default upvote" onclick="up(this)"><span>28</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>0</span> downvote</span>	
+											</div>					
 										<div class="content"></div>
 										</div>
 									</div>
@@ -318,8 +319,8 @@
 											Meet the Sphero BB-8 app-enabled Droid whose movements and personality are as authentic as they are advanced.
 											<br>Guide with smartphone, tablet or voice commands
 											<br>Record, send and view videos
-											<br>Let the Star-Wars BB-8™ patrol on its own
-											<br>NEW WATCH WITH ME FEATURE lets you watch Star Wars: The Force Awakens with your BB-8 by Sphero. BB-8 will react to different characters and scenes.7
+											<br>Let the Star-Wars BB-8 patrol on its own
+											<br>NEW WATCH WITH ME FEATURE lets you watch Star Wars: The Force Awakens with your BB-8 by Sphero. BB-8 will react to different characters and scenes.
 										</p>
 										<div class="row-tag">
 											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">electronics</a>
@@ -329,9 +330,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
-											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
-											</div>						
+											<span class="btn btn-default upvote" onclick="up(this)"><span>142</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>2</span> downvote</span>	
+											</div>					
 										<div class="content"></div>
 										</div>
 									</div>
@@ -349,13 +350,12 @@
 
 		<hr>
 
-		<footer>
-			<p>&copy; 2017 Addie, Inc.</p>
-		</footer>
+		
 
 	</div>
 	</div>
 	<!--/.container-->
+	<%@include file="footer.jsp" %>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

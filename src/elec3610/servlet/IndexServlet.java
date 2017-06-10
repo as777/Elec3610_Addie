@@ -14,5 +14,10 @@ public class IndexServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         request.getRequestDispatcher("index.jsp").include(request, response);
-    }  
+    }
+	
+	public void doPost(HttpServletRequest request, HttpServletResponse response)  
+            throws ServletException, IOException {
+		
+	}
 }

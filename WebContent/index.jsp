@@ -88,9 +88,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">223 upvote</button>							
-											<button class="btn btn-default" type="button">4 downvote</button>	
-										</div>						
+											<span class="btn btn-default upvote" onclick="up(this)"><span>238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>4</span> downvote</span>	
+											</div>						
 										<div class="content"></div>
 									</div>
 								</div>
@@ -119,9 +119,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">405 upvote</button>							
-											<button class="btn btn-default" type="button">3 downvote</button>	
-										</div>						
+											<span class="btn btn-default upvote" onclick="up(this)"><span>238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down(this)"><span>4</span> downvote</span>	
+											</div>					
 										<div class="content"></div>
 									</div>
 								</div>
@@ -147,9 +147,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">52 upvote</button>							
-											<button class="btn btn-default" type="button">0 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>							
 										<div class="content"></div>
 									</div>
 								</div>
@@ -178,9 +178,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">80 upvote</button>							
-											<button class="btn btn-default" type="button">2 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>						
 										<div class="content"></div>
 										</div>
 									</div>
@@ -207,9 +207,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">52 upvote</button>							
-											<button class="btn btn-default" type="button">0 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>							
 										<div class="content"></div>
 										</div>
 									</div>
@@ -233,9 +233,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">10 upvote</button>							
-											<button class="btn btn-default" type="button">0 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>						
 										<div class="content"></div>
 										</div>
 									</div>
@@ -265,9 +265,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">238 upvote</button>							
-											<button class="btn btn-default" type="button">4 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>						
 										<div class="content"></div>
 										</div>
 									</div>
@@ -298,9 +298,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">49 upvote</button>							
-											<button class="btn btn-default" type="button">1 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>						
 										<div class="content"></div>
 										</div>
 									</div>
@@ -329,9 +329,9 @@
 										</div>
 										<div class="row-vote">
 											<div>
-											<button class="btn btn-default" type="button">52 upvote</button>							
-											<button class="btn btn-default" type="button">0 downvote</button>	
-										</div>						
+											<span class="btn btn-default" onclick="up()"><span id="upvote">238</span> upvote</span>							
+											<span class="btn btn-default" onclick="down()"><span id="downvote">4</span> downvote</span>	
+											</div>						
 										<div class="content"></div>
 										</div>
 									</div>

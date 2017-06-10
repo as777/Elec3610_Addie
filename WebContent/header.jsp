@@ -5,11 +5,12 @@
   
     <nav class="nav-left nav">
       <a class="nav-item" href="index.jsp">Home</a>
-      <a class="nav-item" href="trending.jsp">Trending</a>
+      <a class="nav-item" href="#">Trending</a>
       <a class="nav-item" href="#">Popular</a>
       
 	  <div class="input-group" id="search-input">
-		  <input type="text" class="form-control" placeholder="Search for post, tag...">
+		  <input type="text" class="form-control" id="searchinput"
+		  	onkeyup="search()" placeholder="Search for post, tag...">
 		  <span class="input-group-btn">
 			  <button class="btn btn-default" type="button">Search</button>
 		  </span>

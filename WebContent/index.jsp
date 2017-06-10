@@ -23,28 +23,6 @@
 
 <body>
 	<%@include file="header.jsp" %>
-<!-- 	<div class="masthead">
-		<div class="container">
-			<nav class="nav-left nav">
-				<a class="nav-item active" href="index.jsp">Home</a>
-				<a class="nav-item" href="trending.jsp">Trending</a>
-				<a class="nav-item" href="#">Popular</a>
-				<div class="input-group" id="search-input">
-			      <input type="text" class="form-control" placeholder="Search for post">
-			      <span class="input-group-btn">
-			        <button class="btn btn-default" type="button">Search</button>
-			      </span>
-			    </div>/input-group
-			</nav>
-			<nav class="nav-right">
-				<a class="nav-item" href="register.jsp">Register</a>
-				<a class="nav-item" href="login.jsp">Sign In</a>
-				<a class="nav-item" href="logout">Sign Out</a>
-			</nav>
-		</div>
-	</div> -->
-	
-
 	<div class="container">
 
 		<div class="row row-offcanvas row-offcanvas-right">
@@ -60,11 +38,52 @@
 		%>
 				</div>
 				
+				<div class="button-group filters-button-group">
+				  <button class="button is-checked" data-filter="*">all</button>
+				  <button class="button" data-filter=".food">food</button>
+				  <button class="button" data-filter=".fashion">fashion</button>
+				  <button class="button" data-filter=".electronics">electronics</button>
+				  <button class="button" data-filter=".groceries">groceries</button>
+				  <button class="button" data-filter=".home">home</button>
+				</div>
+				
+<!-- 				<div class="btn-toolbar filters">
+					<div data-toggle="buttons" class="btn-group">
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="all" onclick="filtertag(this)">
+		                all
+		              </label>
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="food" onclick="filtertag(this)">
+		                food
+		              </label>
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="fashion" onclick="filtertag(this)">
+		                fashion
+		              </label>
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="electronics" onclick="filtertag(this)">
+		                electronics
+		              </label>
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="groceries" onclick="filtertag(this)">
+		                groceries
+		              </label>
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="home" onclick="filtertag(this)">
+		                home
+		              </label>
+		              <label class="btn btn-default">
+		                <input type="checkbox" value="computing" onclick="filtertag(this)">
+		                computing
+		              </label>
+		            </div>
+				</div> -->
+				
 				<div style="width:1000px;">
-					<div class="grid"
-						data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 250 }'>
+					<div id="masonryContainer" class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 250 }'>
 						<div class="grid-row">
-							<div class="grid-item grid-item--width2 grid-item--height2">
+							<div class="electronics all grid-item grid-item--width2 grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/6b8c9914b7.jpg">
@@ -93,10 +112,11 @@
 											<span class="btn btn-default" onclick="down(this)"><span>0</span> downvote</span>	
 											</div>						
 										<div class="content"></div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="grid-item grid-item--height2">
+							<div class="food all grid-item grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/bded1d1e56facfa8080ac76449ad94a0.jpg">
@@ -128,7 +148,7 @@
 								</div>
 							</div>
 							</div>
-							<div class="grid-item grid-item--height2">
+							<div class="fashion all grid-item grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/8eed25a5fbbf8de56af83959b352e25b.jpg">
@@ -151,15 +171,15 @@
 											<span class="btn btn-default upvote" onclick="up(this)"><span>78</span> upvote</span>							
 											<span class="btn btn-default" onclick="down(this)"><span>0</span> downvote</span>	
 											</div>							
-										<div class="content"></div>
+											<div class="content"></div>
+										</div>
 									</div>
 								</div>
-							</div>
 							</div>
 						</div>
 						
 						<div class="grid-row">
-							<div class="grid-item grid-item--height2">
+							<div class="groceries home all grid-item grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/5b9a079cac6cbea16.jpg">
@@ -175,7 +195,7 @@
 											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">flower</a>
 											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">delivery</a>
 											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">decoration</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">Sport</a>
+											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">home</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -187,7 +207,7 @@
 									</div>
 								</div>							
 							</div>
-							<div class="grid-item grid-item--height2">
+							<div class="fashion all grid-item grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/651be1f31b9d44ba92417.jpg">
@@ -216,7 +236,7 @@
 									</div>
 								</div>							
 							</div>
-							<div class="grid-item grid-item--height2">
+							<div class="home all grid-item grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/danasha.jpg">
@@ -242,7 +262,7 @@
 									</div>
 								</div>							
 							</div>
-							<div class="grid-item grid-item--height2">
+							<div class="sport all grid-item grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/eb7ee560d3b.jpg">
@@ -277,7 +297,7 @@
 						</div>
 						
 						<div class="grid-row">
-							<div class="grid-item grid-item--width2 grid-item--height2">
+							<div class="home all grid-item grid-item--width2 grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/2.png">
@@ -307,7 +327,7 @@
 									</div>
 								</div>							
 							</div>
-							<div class="grid-item grid-item--width2 grid-item--height2">
+							<div class="electronics all grid-item grid-item--width2 grid-item--height2">
 								<div class="hovereffect">
 									<div class="cover">
 										<img src="img/939393p.jpg">
@@ -347,12 +367,6 @@
 			<!--/.col-xs-12.col-sm-9-->
 		</div>
 		<!--/row-->
-
-		<hr>
-
-		
-
-	</div>
 	</div>
 	<!--/.container-->
 	<%@include file="footer.jsp" %>
@@ -362,6 +376,9 @@
 	<script
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.js"></script>
+    <script src="js/multipleFilterMasonry.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

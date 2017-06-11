@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/register_style.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Register - Addie</title>
+	</head>
+	<body>
+	<div class="masthead">
+  <div class="container">
+  
+    <nav class="nav-left nav">
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="#">Trending</a>
+      <a class="nav-item" href="#">Popular</a>
+     
+    </nav>
+    
+    <nav class="nav-right">
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
+		  <a class="nav-item" href="profile.html">Profile</a>
+		  <a class="nav-item" href="logout">Sign Out</a>
+<!--       <div class="header-out">
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
+      </div>
+      <div class="header-in">
+		  <a class="nav-item" href="profile.html">Profile</a>
+		  <a class="nav-item" href="logout">Sign Out</a>
+	  </div> -->
+    </nav>
+  </div>
+</div>
+	    
+		<div class="container">
+			<form class="form-horizontal" method="post" action="register"
+					id="registerform" onSubmit="return validateForm(event);">
+			    <fieldset>
+			
+			        <div class="row">
+						
+						<!-- Personal information -->
+						<div class="block-right">
+					        <!-- Text input-->
+					        <div class="form-group">
+					          <label class=" control-label" for="firstname">Post Title <span class="star">(*)</span></label>  
+					          <div class="">
+					          <input id="firstname" name="firstname" type="text" placeholder="Title" class="form-control input-md" required>
+					          </div>
+					        </div>
+					        
+					        <!-- Text input-->
+					        <div class="form-group">
+					          <label class=" control-label" for="lastname">Link <span class="star">(*)</span></label>  
+					          <div class="">
+					          <input id="lastname" name="lastname" type="text" placeholder="Link to the product, website, etc." class="form-control input-md" required> 
+					          </div>
+					        </div>
+					
+					        <!-- Text input-->
+					        <div class="form-group">
+					          <label class=" control-label" for="email">Description <span class="star">(*)</span></label>  
+					          <div class="">
+					          <input id="email" name="email" type="text" placeholder="Post detail" class="form-control input-md" required>
+					          <span class="help-block">Email will be used for login</span>  
+					          </div>
+					        </div>
+					        
+					        <!-- Text input-->
+					        <div class="form-group">
+					          <label class=" control-label" for="email">Comment</label>  
+					          <div class="">
+					          <input id="email" name="email" type="text" placeholder="Notes for Addie admin" class="form-control input-md" required>
+					          <span class="help-block">Email will be used for login</span>  
+					          </div>
+					        </div>
+					
+					        <!-- Text input-->
+					        <div class="form-group">
+					          <label class=" control-label" for="age">Submit picture</label>
+					          <div class="">
+					            <select id="age" name="age" class="form-control">
+							        <option value="">Choose picture from files</option>
+					            </select>
+					          </div>
+					        </div>
+				        </div>
+			        </div>
+			
+			        <!-- Button (Double) -->
+			        <div style="clear:both"></div>
+			        <div class="button-group">
+			          <label class=" control-label" for="save"></label>
+			          <div class="">
+			            <button id="submit" name="submit" class="btn login-button">Submit</button>
+			            <button id="cancel" name="cancel" class="btn login-button">Cancel</button>
+			          </div>
+			        </div>
+			
+		        </fieldset>
+			</form>
+		</div>
+		<footer class="footer-basic-centered">
+
+	<p class="footer-company-motto">Addie</p>
+
+	<p class="footer-links" style="padding-bottom:0;">
+		<a href="index.html">Home</a>
+		 | 
+		<a href="#">Pricing</a>
+		 | 
+		<a href="#">About</a>
+		 | 
+		<a href="#">Faq</a>
+		 | 
+		<a href="#">Contact</a>
+	</p>
+	<p class="footer-links">
+		<a href="submit.html">Advertise My Business!</a>
+	</p>
+
+	<p class="footer-company-name">Addie &copy; 2017</p>
+
+</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

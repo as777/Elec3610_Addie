@@ -44,14 +44,29 @@ function search() {
 	var posts = document.getElementsByClassName("grid-item");
 	
     for (i = 0; i < posts.length; i++) {
+    	var flag = false;
         a = posts[i].getElementsByTagName("h2")[0];
         b = posts[i].getElementsByTagName("p")[0];
+        c = posts[i].getElementsByClassName("tag");
+        
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
             posts[i].style.display = "";
-        } else if (b.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            continue;
+        }
+        if (b.innerHTML.toUpperCase().indexOf(filter) > -1) {
         	posts[i].style.display = "";
-        } else {
-            posts[i].style.display = "none";
+        	continue;
+        } 
+        for (j = 0; j < c.length; j++) {
+        	console.log(c[j].innerHTML);
+        	if (c[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        		posts[i].style.display = "";
+        		flag = true;
+            	break;
+        	}
+        }
+        if (!flag){
+        	posts[i].style.display = "none";
         }
     }
 	

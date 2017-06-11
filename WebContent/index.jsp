@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="we love ads">
 		<meta name="author" content="peggy, mark, alex">
-		<link rel="icon" href="../../favicon.ico">
+		<link rel="icon" href="favicon.ico">
 		
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,39 +47,6 @@
 				  <button class="button" data-filter=".home">home</button>
 				</div>
 				
-<!-- 				<div class="btn-toolbar filters">
-					<div data-toggle="buttons" class="btn-group">
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="all" onclick="filtertag(this)">
-		                all
-		              </label>
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="food" onclick="filtertag(this)">
-		                food
-		              </label>
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="fashion" onclick="filtertag(this)">
-		                fashion
-		              </label>
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="electronics" onclick="filtertag(this)">
-		                electronics
-		              </label>
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="groceries" onclick="filtertag(this)">
-		                groceries
-		              </label>
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="home" onclick="filtertag(this)">
-		                home
-		              </label>
-		              <label class="btn btn-default">
-		                <input type="checkbox" value="computing" onclick="filtertag(this)">
-		                computing
-		              </label>
-		            </div>
-				</div> -->
-				
 				<div style="width:1000px;">
 					<div id="masonryContainer" class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 250 }'>
 						<div class="grid-row">
@@ -100,11 +67,11 @@
 											<br>* 16 MP camera
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">electronics</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">technology</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">phone</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">online</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">nokia</a>
+											<a class="tag" href="#">electronics</a>
+											<a class="tag" href="#">technology</a>
+											<a class="tag" href="#">phone</a>
+											<a class="tag" href="#">online</a>
+											<a class="tag" href="#">nokia</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -133,10 +100,10 @@
 											<br>- Scamorza (Wood smoked cows milk cheese)
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">food</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">italianfood</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">club</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">takeaway</a>
+											<a class="tag" href="#">food</a>
+											<a class="tag" href="#">italianfood</a>
+											<a class="tag" href="#">club</a>
+											<a class="tag" href="#">takeaway</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -161,10 +128,10 @@
 											<br>Vans half cab is a signature shoe offered from Vans. The new trend of skateboarders with cut from the original Caballero form for better street flip tricks.
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">fashion</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">shoes</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">vans</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">sport</a>
+											<a class="tag" href="#">fashion</a>
+											<a class="tag" href="#">shoes</a>
+											<a class="tag" href="#">vans</a>
+											<a class="tag" href="#">sport</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -192,10 +159,10 @@
 										<br>Guarantees "the freshness, flower quality and value of each Interflora relay order".
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">flower</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">delivery</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">decoration</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">home</a>
+											<a class="tag" href="#">flower</a>
+											<a class="tag" href="#">delivery</a>
+											<a class="tag" href="#">decoration</a>
+											<a class="tag" href="#">home</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -223,8 +190,8 @@
 											<br>WE HAVE EVERYTHING!!!
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">fashion</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">sale</a>
+											<a class="tag" href="#">fashion</a>
+											<a class="tag" href="#">sale</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -248,9 +215,9 @@
 											Fashion designer Jad Ghandour and Danasha Luxury are set to unveil a luxury dress valued at $1.5 million during Miami International Fashion Week. The couture dress will incorporate diamonds and gold as well as other fine materials and precious gems. The luxury dress is set to be worn down the runway by a celebrity model
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">illustration</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">paint</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">homedecoration</a>
+											<a class="tag" href="#">illustration</a>
+											<a class="tag" href="#">paint</a>
+											<a class="tag" href="#">homedecoration</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -281,8 +248,8 @@
 											<br>lifecycle: Current
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">sport</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">skateboard</a>
+											<a class="tag" href="#">sport</a>
+											<a class="tag" href="#">skateboard</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -312,10 +279,10 @@
 											is fashioned out of an old typewriter.
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">homeware</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">breakfast</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">waffle</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">kitchen</a>
+											<a class="tag" href="#">homeware</a>
+											<a class="tag" href="#">breakfast</a>
+											<a class="tag" href="#">waffle</a>
+											<a class="tag" href="#">kitchen</a>
 										</div>
 										<div class="row-vote">
 											<div>
@@ -343,10 +310,10 @@
 											<br>NEW WATCH WITH ME FEATURE lets you watch Star Wars: The Force Awakens with your BB-8 by Sphero. BB-8 will react to different characters and scenes.
 										</p>
 										<div class="row-tag">
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">electronics</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">technology</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">droid</a>
-											<a class="tag" href="https://www.nokia.com/en_au/phones/nokia-6">online</a>
+											<a class="tag" href="#">electronics</a>
+											<a class="tag" href="#">technology</a>
+											<a class="tag" href="#">droid</a>
+											<a class="tag" href="#">online</a>
 										</div>
 										<div class="row-vote">
 											<div>

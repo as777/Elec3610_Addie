@@ -1,0 +1,158 @@
+h2 {
+    padding: 1em;
+    clear: left;
+    text-align: center;
+    border-bottom: 1px solid #70ad46;
+}
+
+/* 
+ * personal information
+ */ 
+ .p-card {
+	float: left;
+    max-width: 300px;
+    margin: 0;
+    padding: 2em;
+    padding-left: 0;
+ }
+ 
+.info-contatiner {
+ 	padding-top: 16px;
+ 	padding-bottom: 16px;
+ }
+ 
+.btn-block {
+ 	margin-bottom: 16px;
+ 	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: #70ad46;
+	position: relative;
+ }
+ 
+.btn-block .btn {
+	color: #fff;
+ }
+ 
+/*  
+ * right block
+ */
+ 
+.main-card {
+    margin-left: 170px;
+    padding: 2em;
+    overflow: hidden;
+}
+
+.sub-card {
+	padding-bottom: 2em;
+}
+
+/* 
+ * post that you've liked 
+ */
+
+.grid-container {
+ 	padding-top: 16px;
+ 	padding-bottom: 16px;
+}
+
+.grid-item {
+	background-color: #eff3f6;
+	padding-bottom: 1em;
+	height: 250px;
+}
+
+.grid-item h4 {
+  display: block;
+  color: dimgray;
+  position: relative;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.grid-item img {
+	float: left;
+	height: 100%;
+}
+
+.grid-item .description-box {
+	float: right;
+	width: 50%;
+	height: 100%;
+}
+
+.description-box a.info {
+  height: 10%;
+  text-decoration: none;
+  padding: 7px 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: dimgray;
+  border: 1px solid dimgray;
+}
+
+.description-box a.info:hover {
+  box-shadow: 0 0 5px dimgray;
+}
+
+.description-box a.upvote{
+  color: #70ad46;
+  border: 1px solid #70ad46;
+}
+
+.description-box a.upvote:hover {
+  box-shadow: 0 0 5px #70ad46;
+}
+
+.description-box a.downvote{
+  color: tomato;
+  border: 1px solid tomato;
+}
+
+.description-box a.downvote:hover {
+  box-shadow: 0 0 5px tomato;
+}
+
+.description-box .row-tag {
+  display: block;
+  padding-top: 1em;
+}
+
+.description-box .row-vote {
+  display: block;
+  padding-top: 1em;
+}
+
+.tag {
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid dimgray;
+  border-radius: .2rem;
+  padding: 5px 5px;
+  background-color: dimgray;
+}
+
+.tag:hover {
+  color: #fff;
+}
+
+.tag-item {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #70ad46;
+}
+
+.cross {
+	cursor: pointer;
+}

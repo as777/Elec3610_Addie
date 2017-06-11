@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<%@include file="header.jsp" %>
+	<%@include file="header.html" %>
     
 <h1>Masonry - Initialize in HTML</h1>
 

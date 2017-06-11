@@ -3,7 +3,7 @@
 	<p class="footer-company-motto">Addie</p>
 
 	<p class="footer-links" style="padding-bottom:0;">
-		<a href="index.jsp">Home</a>
+		<a href="index.html">Home</a>
 		 | 
 		<a href="#">Pricing</a>
 		 | 

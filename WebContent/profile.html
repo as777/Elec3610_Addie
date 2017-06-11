@@ -26,25 +26,16 @@
   <div class="container">
   
     <nav class="nav-left nav">
-      <a class="nav-item" href="index.jsp">Home</a>
+      <a class="nav-item" href="index.html">Home</a>
       <a class="nav-item" href="#">Trending</a>
       <a class="nav-item" href="#">Popular</a>
     </nav>
     
     <nav class="nav-right">
-	<%
-		if (session.getAttribute("firstname") == null) {
-	%>
-	      <a class="nav-item" href="register.jsp">Register</a>
-	      <a class="nav-item" href="login.jsp">Sign In</a>
-	<%
-		} else {
-	%>
-		  <a class="nav-item" href="profile.jsp">Profile</a>
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
+		  <a class="nav-item" href="profile.html">Profile</a>
 		  <a class="nav-item" href="logout">Sign Out</a>
-	<%
-		}
-	%>
     </nav>
   </div>
 </div>
@@ -57,22 +48,28 @@
 				<h3>Info</h3>
 				<div class="info-contatiner">
 					<p>
-						<%=(String)session.getAttribute("firstname")%> <%=(String)session.getAttribute("lastname")%></p>
+						Peggy Song
+					</p>
 					<p>
 						Email:
-						<%=(String)session.getAttribute("email")%></p>
+						<br> peggysong0908@gmail.com
+					</p>
 					<p>
 						Age Range:
-						<%=(String)session.getAttribute("age")%></p>
+						<br> 18-25
+					</p>
 					<p>
 						Gender:
-						<%=(String)session.getAttribute("gender")%></p>
+						<br> Female
+					</p>
 					<p>
 						State:
-						<%=(String)session.getAttribute("state")%></p>
+						<br> NSW
+					</p>
 					<p>
 						Suburb:
-						<%=(String)session.getAttribute("suburb")%></p>
+						<br> Sydney
+					</p>
 				</div>
 				<div class="btn-block">
 					<a href="#" class="btn">Edit</a>
@@ -130,8 +127,26 @@
 			<div class="sub-card">
 				<h3>Analyzing your Preference</h3>
 				<div class="tags-container">
-				<span class="tag-item">35 electronics 
-					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="remove(this)"></span>
+				<span class="tag-item">55 electronics 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
+				</span>
+				<span class="tag-item">40 home 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
+				</span>
+				<span class="tag-item">38 grocery 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
+				</span>
+				<span class="tag-item">12 technology 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
+				</span>
+				<span class="tag-item">2 online 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
+				</span>
+				<span class="tag-item">2 phone 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
+				</span>
+				<span class="tag-item">1 nokia 
+					<span class="cross glyphicon glyphicon-remove" aria-hidden="true" onclick="this.parentElement.style.display = 'none';"></span>
 				</span>
 				</div>
 			</div>
@@ -140,7 +155,28 @@
 		<!-- /.main-card -->
 	</div>
 	<!--/.container-->
-	<%@include file="footer.jsp" %>
+	<footer class="footer-basic-centered">
+
+	<p class="footer-company-motto">Addie</p>
+
+	<p class="footer-links" style="padding-bottom:0;">
+		<a href="index.html">Home</a>
+		 | 
+		<a href="#">Pricing</a>
+		 | 
+		<a href="#">About</a>
+		 | 
+		<a href="#">Faq</a>
+		 | 
+		<a href="#">Contact</a>
+	</p>
+	<p class="footer-links">
+		<a href="#">Advertise My Business!</a>
+	</p>
+
+	<p class="footer-company-name">Addie &copy; 2017</p>
+
+</footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

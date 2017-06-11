@@ -4,7 +4,7 @@
   <div class="container">
   
     <nav class="nav-left nav">
-      <a class="nav-item" href="index.jsp">Home</a>
+      <a class="nav-item" href="index.html">Home</a>
       <a class="nav-item" href="#">Trending</a>
       <a class="nav-item" href="#">Popular</a>
       
@@ -21,22 +21,22 @@
 	<%
 		if (session.getAttribute("firstname") == null) {
 	%>
-	      <a class="nav-item" href="register.jsp">Register</a>
-	      <a class="nav-item" href="login.jsp">Sign In</a>
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
 	<%
 		} else {
 	%>
-		  <a class="nav-item" href="profile.jsp">Profile</a>
+		  <a class="nav-item" href="profile.html">Profile</a>
 		  <a class="nav-item" href="logout">Sign Out</a>
 	<%
 		}
 	%>
 <!--       <div class="header-out">
-	      <a class="nav-item" href="register.jsp">Register</a>
-	      <a class="nav-item" href="login.jsp">Sign In</a>
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
       </div>
       <div class="header-in">
-		  <a class="nav-item" href="profile.jsp">Profile</a>
+		  <a class="nav-item" href="profile.html">Profile</a>
 		  <a class="nav-item" href="logout">Sign Out</a>
 	  </div> -->
     </nav>

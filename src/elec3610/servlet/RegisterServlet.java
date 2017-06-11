@@ -14,7 +14,7 @@ public class RegisterServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
-	    request.getRequestDispatcher("register.jsp").include(request, response);
+	    request.getRequestDispatcher("register.html").include(request, response);
 	}
 
 	public void doPost(HttpServletRequest request,
@@ -104,8 +104,8 @@ public class RegisterServlet extends HttpServlet {
 //		    
 			PrintWriter out = response.getWriter();
 //			out.print("Thank you for sign up, please log in");
-//		    response.sendRedirect("login.jsp");
-			request.getRequestDispatcher("login.jsp").include(request, response);
+//		    response.sendRedirect("login.html");
+			request.getRequestDispatcher("login.html").include(request, response);
 		    out.close();
 
 		} catch (Exception e) {

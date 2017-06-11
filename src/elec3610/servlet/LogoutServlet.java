@@ -20,7 +20,7 @@ public class LogoutServlet extends HttpServlet {
 		session.invalidate();
 
 //		out.print("You are successfully logged out.");
-		request.getRequestDispatcher("index.jsp").include(request, response);
+		request.getRequestDispatcher("index.html").include(request, response);
 
 		out.close();
 	}

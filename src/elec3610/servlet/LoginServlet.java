@@ -14,7 +14,7 @@ public class LoginServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)  
 	        throws ServletException, IOException { 
 		response.setContentType("text/html");  
-	    request.getRequestDispatcher("login.jsp").include(request, response);
+	    request.getRequestDispatcher("login.html").include(request, response);
 	}
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)  
@@ -28,12 +28,12 @@ public class LoginServlet extends HttpServlet {
 	    String password = request.getParameter("password");  
 	          
 	    if(validate(email, password, request)) {  
-	        request.getRequestDispatcher("index.jsp").include(request, response);
+	        request.getRequestDispatcher("index.html").include(request, response);
 	    }  
 	    else{
 //	    	out.print("Please check the username or password is correct."); 
 	    	request.setAttribute("message", "Invalid email or password.");
-            request.getRequestDispatcher("login.jsp").include(request, response);
+            request.getRequestDispatcher("login.html").include(request, response);
 	    }  
 	          
 	    out.close();  

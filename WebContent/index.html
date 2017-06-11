@@ -22,7 +22,33 @@
 	</head>
 
 <body>
-	<%@include file="header.jsp" %>
+	<div class="masthead">
+  <div class="container">
+  
+    <nav class="nav-left nav">
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="#">Trending</a>
+      <a class="nav-item" href="#">Popular</a>
+     
+    </nav>
+    
+    <nav class="nav-right">
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
+		  <a class="nav-item" href="profile.html">Profile</a>
+		  <a class="nav-item" href="logout">Sign Out</a>
+<!--       <div class="header-out">
+	      <a class="nav-item" href="register.html">Register</a>
+	      <a class="nav-item" href="login.html">Sign In</a>
+      </div>
+      <div class="header-in">
+		  <a class="nav-item" href="profile.html">Profile</a>
+		  <a class="nav-item" href="logout">Sign Out</a>
+	  </div> -->
+    </nav>
+  </div>
+</div>
+	
 	<div class="container">
 
 		<div class="row row-offcanvas row-offcanvas-right">
@@ -30,12 +56,7 @@
 			<div>
 				<div class="jumbotron">
 					<h1>Addie</h1>
-		<%
-			String firstname = (String)session.getAttribute("firstname");
-			if (firstname != null) {
-				out.print(firstname + ", here is your ads feed based on what you like...");
-			}
-		%>
+					<p>Hi, here is your ads feed based on what you like...</p>
 				</div>
 				
 				<div class="button-group filters-button-group">
@@ -46,6 +67,13 @@
 				  <button class="button" data-filter=".groceries">groceries</button>
 				  <button class="button" data-filter=".home">home</button>
 				</div>
+	  <div class="input-group" id="search-input">
+		  <input type="text" class="form-control" id="searchinput"
+		  	onkeyup="search()" placeholder="Search for post, tag...">
+		  <span class="input-group-btn">
+			  <button class="btn btn-default" type="button">Search</button>
+		  </span>
+	  </div><!-- /input-group -->
 				
 				<div style="width:1000px;">
 					<div id="masonryContainer" class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 250 }'>
@@ -336,7 +364,28 @@
 		<!--/row-->
 	</div>
 	<!--/.container-->
-	<%@include file="footer.jsp" %>
+	<footer class="footer-basic-centered">
+
+	<p class="footer-company-motto">Addie</p>
+
+	<p class="footer-links" style="padding-bottom:0;">
+		<a href="index.html">Home</a>
+		 | 
+		<a href="#">Pricing</a>
+		 | 
+		<a href="#">About</a>
+		 | 
+		<a href="#">Faq</a>
+		 | 
+		<a href="#">Contact</a>
+	</p>
+	<p class="footer-links">
+		<a href="#">Advertise My Business!</a>
+	</p>
+
+	<p class="footer-company-name">Addie &copy; 2017</p>
+
+</footer>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
